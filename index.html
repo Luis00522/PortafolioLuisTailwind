@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio Luis Ruiz Tailwind</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <nav class="bg-slate-800 p-2">
+      <ul class="flex justify-around text-base font-bold text-white">
+        <li><a href="#salt1">SOBRE MI</a></li>
+        <li><a href="#salt2">ELS MEUS TREBALLS</a></li>
+        <li><a href="#salt3">CONTACTE</a></li>
+      </ul>
+    </nav>
+
+    <div class="bg-stone-400">
+      <h1 class="mb-6 pt-5 text-center text-3xl font-bold text-orange-400 drop-shadow-lg">
+        Sobre Mi
+      </h1>
+      <div class="flex items-center justify-center gap-10 mt-15">
+        <img
+          class="h-[170px] w-[170px] rounded-full border object-cover mb-4"
+          src="img/Foto_Luis.jpg"
+          alt="Descripción de la primera imagen"
+        />
+        <p class="max-w-[450px] text-justify mb-5">
+          Sóc en Luis Ruiz, tinc 19 anys i actualment estic cursant el grau de
+          Desenvolupament d'Aplicacions Web (DAW). Des de ben petit, m'han atret
+          la tecnologia i la informàtica, i ara estic molt motivat per aprendre
+          i créixer dins d'aquest àmbit tan apassionant.
+        </p>
+      </div>
+    </div>
+
+    <div id="salt2">
+      <h2 class="mb-6 pt-5 text-center text-3xl font-bold text-orange-400 drop-shadow-lg">Els meus treballs</h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center mx-8 font-bold text-orange-400">
+      <div class="contenidor">
+        <img src="./img/imagen1.jpg" alt="Descripción de la primera imagen" />
+        <p class="mt-4"><a href="https://github.com/Luis00522/QuickServe">Aplicació per gestió de taules, reserves i clients de un restaurant</a></p>
+      </div>
+      <div class="contenidor">
+        <img src="./img/imagen2.jpg" alt="Descripción de la segunda imagen" />
+        <p class="mt-4"><a href="https://github.com/DAW-Cirvianum/projecteuf1-Luis00522">Apliació per gestió de tasques i treballadors</a></p>
+      </div>    
+      <div class="contenidor">
+        <img src="./img/github-copilot.jpg" alt="Descripción de la segunda imagen" />
+        <p class="mt-4"><a href="https://github.com/Luis00522">Altres projectes</a></p>
+      </div> 
+    </div>
+
+    <footer class="relative bg-slate-800 text-white py-5 mt-auto">
+      <div id="salt3" class="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto">
+        <div class="flex flex-col text-center md:text-left">
+          <h3 class="text-lg font-sans mb-1">VOLS TREBALLAR AMB MI?</h3>
+          <a href="mailto:luis.ruizi@cirvinaum.cat" class="text-gray-400 hover:text-white text-base">luis.ruizi@cirvinaum.cat</a>
+        </div>
+        <div class="center relative md:absolute md:left-1/2 transform md:-translate-x-1/2 text-center mt-4 md:mt-0">
+          <p class="font-sans">&copy; 2024 Luis Ruiz. Tots els drets reservats.</p>
+        </div>
+        <div class="right flex flex-col items-center mt-4 md:mt-0">
+          <h3 class="text-lg font-sans mb-2">LES MEVES XARXES</h3>
+          <div class="icon-container flex gap-4">
+            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" class="icon linkedin">
+              <img src="./public/img/linkedin.png" alt="LinkedIn" class="w-12 h-12 hover:brightness-110">
+            </a>
+            <a href="https://github.com/Luis00522" class="icon github">
+              <img src="./img/github.png" alt="GitHub" class="w-12 h-12 hover:brightness-110">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
